@@ -1,44 +1,54 @@
 :root {
-  --nutmeg: hsl(14, 45%, 36%);
-  --dark-raspberry: hsl(332, 51%, 32%);
-  --rose-white: hsl(330, 100%, 98%);
-  --eggshell: hsl(30, 54%, 90%);
-  --light-grey: hsl(30, 18%, 87%);
-  --wenge-brown: hsl(30, 10%, 34%);
-  --dark-charcoal: hsl(24, 5%, 18%);
-
+	--nutmeg: hsl(14, 45%, 36%);
+	--dark-raspberry: hsl(332, 51%, 32%);
+	--rose-white: hsl(330, 100%, 98%);
+	--eggshell: hsl(30, 54%, 90%);
+	--light-grey: hsl(30, 18%, 87%);
+	--wenge-brown: hsl(30, 10%, 34%);
+	--dark-charcoal: hsl(24, 5%, 18%);
 }
 
 @font-face {
-  font-family: "Young Serif";
-  src: url(/public/assets/fonts/young-serif/YoungSerif-Regular.ttf);
+	font-family: "Young Serif";
+	src: url(/public/assets/fonts/young-serif/YoungSerif-Regular.ttf);
 }
 
 @font-face {
-  font-family: "Outfit";
-  src: url(/public/assets/fonts/outfit/Outfit-VariableFont_wght.ttf);
+	font-family: "Outfit";
+	src: url(/public/assets/fonts/outfit/Outfit-VariableFont_wght.ttf);
 }
 
 .App {
-  text-align: center;
+	text-align: left;
 }
 
 .App-header {
-  background-color: var(--eggshell);
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+	background-color: var(--eggshell);
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	font-size: calc(10px + 2vmin);
+	font-family: "Outfit";
 }
 
 .recipe-container {
-  background-color: white;
-  display: flex;
+  margin: 10px;
+  padding: 15px;
+  border-radius: 10px;
+	background-color: white;
+	display: flex;
+	flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .recipe-image {
-  max-width: 100vw;
+  border-radius: 5px;
+	width: 100%;
+}
+
+h1 {
+	font-family: "Young Serif";
 }

@@ -1,8 +1,8 @@
-export default function Image() {
+export default function Image({imageSRC}) {
     return (
         <img
             alt="Omlette"
             className="recipe-image" 
-            src="/assets/images/image-omelette.jpeg" />
+            src={imageSRC} />
     )
 }
