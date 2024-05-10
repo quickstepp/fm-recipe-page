@@ -33,3 +33,12 @@
   font-size: calc(10px + 2vmin);
   color: white;
 }
+
+.recipe-container {
+  background-color: white;
+  display: flex;
+}
+
+.recipe-image {
+  max-width: 100vw;
+}
