@@ -6,6 +6,7 @@
 	--light-grey: hsl(30, 18%, 87%);
 	--wenge-brown: hsl(30, 10%, 34%);
 	--dark-charcoal: hsl(24, 5%, 18%);
+	--p-container: 15px
 }
 
 @font-face {
@@ -20,6 +21,8 @@
 
 .App {
 	text-align: left;
+	color: var(--dark-charcoal);
+	line-height: 1.5rem;
 }
 
 .App-header {
@@ -34,21 +37,56 @@
 }
 
 .recipe-container {
-  margin: 10px;
-  padding: 15px;
-  border-radius: 10px;
+	margin: 10px;
+	padding: var(--p-container);
+	border-radius: 10px;
 	background-color: white;
 	display: flex;
 	flex-direction: column;
-  align-items: center;
-  justify-content: center;
+	justify-content: center;
+	gap: 30px;
+	overflow: hidden;
 }
 
 .recipe-image {
-  border-radius: 5px;
-	width: 100%;
+	width: calc(100% + 2 * var(--p-container));
+	margin: calc(var(--p-container) * -1);
 }
 
 h1 {
 	font-family: "Young Serif";
+	line-height: 2.5rem;
+	margin: 0px;
+	padding: 0px;
+}
+
+p {
+	margin: 0px;
+	padding: 0px;
+}
+
+.preparation-box {
+	background-color: var(--rose-white);
+	display: flex;
+	flex-direction: column;
+	padding: 15px;
+	border-radius: 10px;
+}
+
+.preparation-title {
+	color: var(--dark-raspberry);
+	margin: 0px;
+	margin-bottom: 5px;
+}
+
+.times-cluster {
+	display: grid;
+	gap: 2px 30px;
+	grid-auto-flow: row;
+	justify-content: center;
+	grid-template-columns: auto auto;
+}
+
+.minutes {
+	text-align: right;
 }
