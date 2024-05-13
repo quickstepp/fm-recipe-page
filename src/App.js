@@ -2,6 +2,7 @@ import "./App.css";
 import Image from "./components/Image";
 import Introduction from "./components/Introduction";
 import Preparation from "./components/Preparation";
+import Ingredients from "./components/Ingredients";
 
 function App() {
 	return (
@@ -11,6 +12,7 @@ function App() {
 					<Image />
 					<Introduction />
 					<Preparation />
+					<Ingredients />
 				</div>
 			</header>
 		</div>

@@ -60,6 +60,13 @@ h1 {
 	padding: 0px;
 }
 
+h2 {
+	font-family: "Young Serif";
+	color: var(--wenge-brown);
+	padding: 0px;
+	margin: 0px;
+}
+
 p {
 	margin: 0px;
 	padding: 0px;
@@ -89,4 +96,26 @@ p {
 
 .minutes {
 	text-align: right;
+}
+
+.ingredients-wrap {
+	display: grid;
+	padding-left: 50px;
+	grid-template-columns: 15% auto;
+	gap: 1px 10px;
+	justify-content: left;
+}
+
+.quantity {
+	text-align: right;
+	max-width: fit-content;
+}
+
+.optional-fillings {
+	grid-column-start: span 2;
+	margin-top: 10px;
+}
+
+.optional-ingredients {
+	grid-column-start: 2;
 }
